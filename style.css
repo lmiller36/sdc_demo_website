@@ -1,6 +1,144 @@
-.centered{
-	text-align: center;
-}
-.colored{
-	color: blue;
-}
+ * { box-sizing: border-box; }
+      .group:before,
+      .group:after {
+      content: " "; /* 1 */
+      display: table; /* 2 */
+      }
+      .group:after {
+      clear: both;
+      }
+      /**
+      * For IE 6/7 only
+      * Include this rule to trigger hasLayout and contain floats.
+      */
+      .group {
+      *zoom: 1;
+      }
+      body{
+      padding-top: 650px;
+      font-family: "Roboto Condensed",sans-serif;
+      }
+      .site-header{
+      /*background-image: linear-gradient(to top,transparent, rgba(0,0,0,.7) 1%), url("https://s3.amazonaws.com/StartupStockPhotos/20140808_StartupStockPhotos/99.jpg");*/
+      background: #ccc url("https://s3.amazonaws.com/StartupStockPhotos/20140808_StartupStockPhotos/99.jpg");
+      background-blend-mode: luminosity;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 650px;
+      border-bottom: 1px solid #ccc;
+      text-align:center;
+      padding-top: 120px;
+      font-family: "Oswald",sans-serif;
+      }
+      .site-header h1{
+      font-size: 90px;
+      color: ;
+      text-transform: uppercase;
+      }
+      .site-header span{
+      color: firebrick;
+      display: inline-block;
+      font-size: 34px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid;
+      }
+      .site-header .cta{
+      font-size: 1.5rem;
+      background-color: dodgerblue;
+      color: #fff;
+      box-shadow: inset 0 -3px 0 rgba(0,0,0,.3);
+      border-radius: 6px;
+      font-weight: bold;
+      padding: 10px 20px;
+      text-decoration: none;
+      margin-top: 25px;
+      }
+      .main-content,
+      .main-nav{
+      position: relative;
+      }
+      .main-nav{
+      position: absolute;
+      top:0;
+      left:0;
+      width: 100%;
+      text-align:center;
+      background-color: #fff;
+      height: 60px;
+      box-shadow: 0 3px 6px rgba(0,0,0,.25);
+      z-index: 100;
+      font-family: "Oswald",sans-serif;
+      margin-bottom: -60px;
+      }
+      .nav-fixed,
+      .site-header{
+      position: fixed;
+      top:0;
+      left:0;
+      }
+      .main-nav a{
+      display: inline-block;
+      margin-top: 5px;
+      margin-bottom: 8px;
+      border-bottom: 1px solid transparent;
+      padding: 10px 0;
+      color: #333;
+      text-decoration: none;
+      font-size: 18px;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-right: 10px;
+      }
+      .main-nav a.chosen{
+      border-color: indianred;
+      }
+      .main-content{
+      padding-top: 80px;
+      padding-bottom: 60px;
+      background-color: #f7f7f7;
+      }
+      .main-content h2,
+      .main-content h3{
+      font-family: "Oswald",sans-serif;
+      }
+      .main-content h2{
+      font-size: 34px;
+      margin-bottom: 50px;
+      }
+      .main-content h3{
+      color: rgba(0,0,0,.76);
+      }
+      .main-content p, .main-content li{
+      color: rgba(0,0,0,.6);
+      line-height: 1.4;
+      }
+      .page-section{
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      }
+      .page-section .readmore{
+      color: steelblue;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 15px;
+      font-size: 16px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid steelblue;
+      text-transform: uppercase;
+      }
+      .webdesign,
+      .webdevelopment{
+      width: 49%;
+      height: 500px;
+      background: linear-gradient(to bottom, #f7f7f7, #f6f6f6, transparent 60%), #f0f0f0;
+      box-shadow: 0 3px 0 #ddd;
+      padding: 5px 25px;
+      }
+      .webdesign{
+      float: left;
+      }
+      .webdevelopment{
+      float: right;
+      }
