@@ -142,3 +142,6 @@
       .webdevelopment{
       float: right;
       }
+      .hidden{
+      	display: none;
+      }
